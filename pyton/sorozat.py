@@ -14,6 +14,7 @@ def feladat2():
             print(szam)
         i += 1
     konzol_kiir()
+    file_kiir()
 
 def parosok_szama(list):
     paros = 0
@@ -30,8 +31,9 @@ def konzol_kiir():
 
 def file_kiir():
     print("II F:")
-    f = open("kimutatas.txt", "w")
-    f.write("\t A  párosok szama: ", parosok_szama(lista))
+    f = open("kimutatas.txt", "a")
+    szam = parosok_szama(lista)
+    f.write("\t A párosok szama: ",szam)
     f.close()
 
 
