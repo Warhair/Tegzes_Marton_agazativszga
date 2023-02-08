@@ -1,5 +1,5 @@
 class Formula:
-    def __init__(self, list):
+    def __init__(self, nev, elsop, utolsop, magassag, suly):
       self.nev = list[0]
       self.elsop = list[1]
       self.utolsop = list[2]
