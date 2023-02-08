@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    background: url("hatterek/hatter2.jpg");
+    font-family: verdana;
+
+
+}
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-areas: 
+    "h" "h"
+    "n" "n"
+    "ar" "as"
+    "f" "f"
+}
+head{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+    color: white;
+    background-color: green;
+    list-style-type: none;
+    text-decoration: none;
+    
+
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
